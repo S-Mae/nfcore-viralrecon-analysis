@@ -76,6 +76,6 @@ Working through these errors improved my understanding of:
 - The critical role of metadata organization (samplesheets, primers).
 - The value of IGV for visually confirming computational results.
 
-Ultimately, this experience reinforced one principle:
+This experience reinforced one principle:
 
 **“Tools don’t replace thinking, they amplify it.”**
