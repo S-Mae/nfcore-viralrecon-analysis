@@ -10,7 +10,7 @@ The project originated from the **Bioinformatics for Biologists course** by Well
 ## Overview  
 This project demonstrates the complete process of viral genome reconstruction and mutation profiling using open-source tools like **Nextflow**, **nf-core/viralrecon**, **SnpEff**, **USHER**, and **IGV**.  
 
-It highlights the learning curve of a beginner navigating real-world bioinformatics pipelines — from repetitive errors and failed runs to achieving reproducible and interpretable results.
+It highlights the learning curve of a beginner navigating real-world bioinformatics pipelines from repetitive errors and failed runs to achieving reproducible and interpretable results.
 
 ---
 
