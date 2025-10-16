@@ -78,4 +78,4 @@ Working through these errors improved my understanding of:
 
 Ultimately, this experience reinforced one principle:
 
-**“Tools don’t replace thinking — they amplify it.”**
+**“Tools don’t replace thinking, they amplify it.”**
