@@ -1,9 +1,9 @@
 # 🧬 nfcore-viralrecon-analysis  
 ### **The Kappa Variant Discovery**
 
-This repository documents my first end-to-end analysis of **SARS-CoV-2 sequencing data** using the **nf-core/viralrecon** pipeline — from raw FASTQ files to lineage identification of the **Kappa (B.1.617.1)** variant.  
+This repository documents my first end-to-end analysis of **SARS-CoV-2 sequencing data** using the **nf-core/viralrecon** pipeline from raw FASTQ files to lineage identification of the **Kappa (B.1.617.1)** variant.  
 
-The project originated from the **Bioinformatics for Biologists course** by Wellcome Connecting Science, where I was introduced to the **nf-core/viralrecon** workflow. However, after completing the guided steps, I expanded the analysis independently — troubleshooting, modifying, and extending the workflow to identify variants and mutations in real samples.
+The project originated from the **Bioinformatics for Biologists course** by Wellcome Connecting Science, where I was introduced to the **nf-core/viralrecon** workflow. However, after completing the guided steps, I expanded the analysis independently via troubleshooting, modifying, and extending the workflow to identify variants and mutations in real samples.
 
 ---
 
