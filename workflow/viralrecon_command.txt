@@ -1,13 +1,35 @@
+# Environment setup
+conda activate MOOC
+
+# Download FASTQ files
+for i in $(cat samples.txt); do fastq-dump --split-files $i; done
+gzip *.fastq
+
+# Organize data
+mkdir data
+mv *.fastq.gz data
+
+# Generate samplesheet
+wget -L https://raw.githubusercontent.com/nf-core/viralrecon/master/bin/fastq_dir_to_samplesheet.py
+python3 fastq_dir_to_samplesheet.py data samplesheet.csv -r1 _1.fastq.gz -r2 _2.fastq.gz
+
+# View the content in samplesheet
+cat samplesheet.csv
+
+# Activate Nextflow
+conda activate nextflow
+
+# Run nf-core/viralrecon
 nextflow run nf-core/viralrecon -profile singularity \
---max_memory '12.GB' --max_cpus 4 \
---input samplesheet.csv \
---outdir results/viralrecon \
---protocol amplicon \
---genome 'MN908947.3' \
---primer_set artic \
---primer_set_version 3 \
---skip_kraken2 \
---skip_assembly \
---skip_pangolin \
---skip_nextclade \
---platform illumina
+  --max_memory '12.GB' --max_cpus 4 \
+  --input samplesheet.csv \
+  --outdir results/viralrecon \
+  --protocol amplicon \
+  --genome 'MN908947.3' \
+  --primer_set artic \
+  --primer_set_version 3 \
+  --skip_kraken2 \
+  --skip_assembly \
+  --skip_pangolin \
+  --skip_nextclade \
+  --platform illumina
