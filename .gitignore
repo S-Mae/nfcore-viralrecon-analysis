@@ -1,0 +1,20 @@
+# Ignore all large results except for the single example sample
+results/*
+!results/ERR5743893/
+
+# Ignore unnecessary temp, cache, and system files
+*.tmp
+*.log
+*.zip
+*.gz
+*.tar
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+
+# Ignore nf-core/Nextflow working directories
+work/
+nextflow.*
+.output/
+.cache/
+
