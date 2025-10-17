@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+4	8b/183be1	1889	NFCORE_VIRALRECON:ILLUMINA:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (nCoV-2019.reference.fasta)	FAILED	1	2025-07-28 12:05:31.291	289ms	208ms	-	-	-	-	-
